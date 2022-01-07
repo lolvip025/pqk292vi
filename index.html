@@ -5,10 +5,69 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>PQK292VI</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+			body {
+				width: 100vw;
+				height: 100vh;
+				font-family: 'The Nautigal', cursive;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+				background-color: black;
+			}
+			a {
+				position: relative;
+				font-size: 7em;
+				color: #f6911e;
+				text-decoration: double;
+			}
+			a::after {
+				position: absolute;
+				content: '';
+				background-color: #0000007a;
+				width: 60vw;
+				height: 20vh;
+				left: -10%;
+				z-index: -1;
+				border-radius: 100%;
+			}
+			svg {
+				position: absolute;
+				z-index: -2;
+				width: 70vw;
+				height: 70vh;
+			}
+		</style>
 	</head>
 	<body>
-		<a style="font-size: 5em" href="./Rabbitcinema/home.html"
-			>GOTO RABBIT WEB SITE</a
+		<a href="/Rabbitcinema/home.html">Đi đến webiste Rabbit Cinema</a>
+		<svg
+			id="sw-js-blob-svg"
+			viewBox="0 0 100 100"
+			xmlns="http://www.w3.org/2000/svg"
 		>
+			<defs>
+				<linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+					<stop id="stop1" stop-color="rgba(45, 57, 144, 1)" offset="0%"></stop>
+					<stop
+						id="stop2"
+						stop-color="rgba(16.967, 44.824, 246.785, 1)"
+						offset="100%"
+					></stop>
+				</linearGradient>
+			</defs>
+			<path
+				fill="url(#sw-gradient)"
+				d="M21.2,-28.5C28.7,-23.7,36.8,-19.1,40.4,-12.2C44,-5.2,43.1,4.3,39.3,11.8C35.5,19.3,28.8,24.9,21.8,29.9C14.8,34.9,7.4,39.1,-0.7,40.1C-8.8,41,-17.5,38.6,-23.9,33.4C-30.2,28.3,-34,20.3,-35.3,12.4C-36.5,4.6,-35,-3.2,-32.9,-11C-30.8,-18.8,-28,-26.7,-22.4,-32.1C-16.8,-37.5,-8.4,-40.5,-0.8,-39.4C6.8,-38.3,13.7,-33.3,21.2,-28.5Z"
+				width="100%"
+				height="100%"
+				transform="translate(50 50)"
+				stroke-width="0"
+				style="transition: all 0.3s ease 0s"
+				stroke="url(#sw-gradient)"
+			></path>
+		</svg>
 	</body>
 </html>
