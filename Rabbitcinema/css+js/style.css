@@ -121,14 +121,13 @@ nav .logo svg {
 #menu {
 	display: flex;
 	background-color: rgba(255, 255, 255, 0.25);
-	overflow: hidden;
 	border-radius: 25px;
 	box-sizing: border-box;
 }
 
 #menu li {
+	position: relative;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	width: auto;
 	height: auto;
@@ -180,12 +179,13 @@ nav .logo svg {
 	display: block;
 }
 #menu ul.sub-menu {
-	width: 220px;
 	position: absolute;
+	width: 220px;
+	top: 100%;
+	left: 0;
 	display: none;
 	z-index: 1;
 	background-color: rgba(246, 147, 32, 0.9);
-	margin-top: 8px;
 	border: 1px solid rgba(255, 255, 255, 0.25);
 	border-radius: 0px 10px 10px 10px;
 	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
@@ -195,6 +195,7 @@ nav .logo svg {
 }
 #menu ul.sub-menu > li {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	text-align: left;
 }
 #menu ul.sub-menu > li:hover {
 	background-color: rgba(255, 255, 255, 0.5);
